@@ -1,0 +1,56 @@
+.CardCountry.selected {
+  border-color: #80020F;
+  background-color: #80020f18;
+}
+
+.CardCountry {
+  width: 230px;
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background-color: #F5F5F5;
+  position: relative;
+}
+
+.CardCountry.light {
+  border: 2px solid #ccc;
+  background-color: unset;
+}
+
+.CardCountry img {
+  height: 32px;
+  width: 48px;
+}
+
+.CardCountry span {
+  margin-left: 20px;
+}
+
+.CardCountry.isSelectable {
+  cursor: pointer;
+}
+
+.CardCountry.isSelectable:hover {
+  background-color: #E5E5E5;
+}
+
+.CardCountry .isThirst {
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  background-color: #80020f;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 2;
+}
+
+.CardCountry.light .isThirst {
+  background-color: #E5E5E5;
+}
